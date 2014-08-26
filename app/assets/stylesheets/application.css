@@ -14,13 +14,54 @@
  *= require_self
  */
 
-body {
+.wrapper {
+    width:50%;
+    margin:0 auto;
+}
+
+#todo, #todoDone {
+    display:inline;
+}
+
+#flash {
+    background-color: #6061ff;
+    color:white;
+    text-align: center;
+    border:1px solid black;
+    display:none;
+}
+
+.right {
+    position:relative;
+    float:right;
+}
+
+.center {
+    margin:0 auto;
+    width:150px;
     text-align: center;
 }
-#flash {
-    width: 60%;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: limegreen;
+
+.right div {
+    display:inline;
+}
+
+p {
+    display:inline;
+}
+
+table, td, tr {
+    width:100%;
+}
+
+tr:nth-child(even) {
+    background-color: #bdbdbd;
+}
+
+tr:nth-child(odd) {
+    background-color: #dbdbdb;
+}
+
+#done-todo {
+    display:none;
 }
